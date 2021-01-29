@@ -1,0 +1,15 @@
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    font-size: 3em;
+    text-align: center;
+    margin-left: 3vmin;
+}
+
+.logo-img {
+
+}

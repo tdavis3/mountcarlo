@@ -1,0 +1,10 @@
+.Stats {
+    margin: 2vmin;
+    flex-grow: 1;
+}
+
+.initialized-info {
+    border: 1px solid #B81328;
+    background-color: #B81328;
+    width: 50%;
+}

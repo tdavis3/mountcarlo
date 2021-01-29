@@ -1,0 +1,46 @@
+footer {
+    margin-top: 1vmin;
+    flex-shrink: 0;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 0.8rem;
+}
+
+ul {
+    padding-inline-start: unset;
+}
+
+.icon {
+    flex-shrink: 0;
+    width: auto;
+    height: 1.5rem;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+svg.icon {
+    fill: white;
+}
+
+svg.twitter-icon:hover {
+    fill: #1DA1F2;
+}
+
+svg.github-icon:hover {
+    fill: #9932CC;
+}
+
+svg.mountcarlo-icon:hover {
+    fill: #B81328;
+}

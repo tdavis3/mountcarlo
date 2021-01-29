@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="474.23" height="467.747" viewBox="0 0 474.23 467.747">
+    <g id="Group_10" transform="translate(-306.303 -245.476)" style="isolation: isolate">
+        <g id="Group_4" transform="translate(306.303 245.476)">
+            <g id="Group_3" transform="translate(0 0)">
+                <g id="Component_2_6">
+                    <g id="Polygon_1" fill="none">
+                        <path d="M237.115,0,474.23,438.169H0Z" stroke="none"/>
+                        <path d="M 237.1151580810547 21.011474609375 L 16.7818603515625 428.1693115234375 L 457.4484558105469 428.1693115234375 L 237.1151580810547 21.011474609375 M 237.1151580810547 0 L 474.2303161621094 438.1693115234375 L 0 438.1693115234375 L 237.1151580810547 0 Z" stroke="none" fill="#fff"/>
+                    </g>
+                    <path id="Path_4" d="M127.22,0-2.889,416.107" transform="translate(107.823 18.161)" fill="none" stroke="#fff" stroke-width="10"/>
+                    <path id="Path_2" d="M129.541,416.107,0,0" transform="translate(239.15 18.161)" fill="none" stroke="#fff" stroke-width="10"/>
+                    <g id="Polygon_2" transform="translate(183.894 383.791)" fill="#fff">
+                        <path d="M 99.65961456298828 78.95509338378906 L 9.200492858886719 78.95509338378906 L 54.4300537109375 9.19120979309082 L 99.65961456298828 78.95509338378906 Z" stroke="none"/>
+                        <path d="M 54.4300537109375 18.38239288330078 L 18.40097808837891 73.95509338378906 L 90.45912933349609 73.95509338378906 L 54.4300537109375 18.38239288330078 M 54.4300537109375 0 L 108.8600997924805 83.95509338378906 L 7.62939453125e-06 83.95509338378906 L 54.4300537109375 0 Z" stroke="none" fill="#fff"/>
+                    </g>
+                </g>
+            </g>
+            <path id="Path_1" d="M-.01.557,1.634,410.837" transform="translate(237.002 9.547)" fill="none" stroke="#fff" stroke-width="10"/>
+        </g>
+    </g>
+</svg>

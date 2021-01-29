@@ -1,0 +1,23 @@
+.BiddingTable {
+    flex-grow: 1;
+}
+
+.bid-handler {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.bid-input {
+    display: flex;
+    text-align: center;
+}
+
+.bid-input-units {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.units {
+    margin: 1vmin;
+}

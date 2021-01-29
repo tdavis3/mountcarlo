@@ -1,0 +1,11 @@
+.Collect {
+    margin: 2vmin;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.collect-helper-text {
+    text-align: center;
+}

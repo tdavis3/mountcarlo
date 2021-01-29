@@ -1,0 +1,43 @@
+.Home {
+    padding: 5vmin 10vmax 5vmin 10vmax;
+    /*height: 100%;*/
+    /*flex-grow: 1;*/
+    /*justify-items: center;*/
+    /*align-items: center;*/
+    flex: 1 0 auto;
+}
+
+button {
+    background-color: #B81328;
+    color: white;
+}
+
+button:hover {
+    opacity: .85;
+}
+
+button.connect {
+    font-size: 1.2em;
+}
+
+.main-view {
+    display: flex;
+}
+
+.view-title {
+    text-align: center;
+}
+
+.user-interaction-table {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin: 2vmin;
+}
+
+.divider {
+    border: 1px solid #B81328;
+    background-color: #B81328;
+    margin: 3vmin;
+    text-align: center;
+}
