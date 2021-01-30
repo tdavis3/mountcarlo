@@ -14,6 +14,8 @@ src/contracts
 /build
 
 # misc
+.firebase
+.firebaserc
 .DS_Store
 .env.local
 .env.development.local

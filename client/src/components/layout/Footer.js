@@ -16,7 +16,7 @@ const Footer = () => {
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="https://github.com" target="_blank"
+                    <a className="nav-link" href="https://github.com/tdavis3/mountcarlo" target="_blank"
                        rel="noopener noreferrer">
                         <title>Github</title>
                         <svg className="icon github-icon" role="img" viewBox="0 0 24 24">
