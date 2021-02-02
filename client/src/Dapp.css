@@ -1,5 +1,11 @@
+:root {
+    --background: #010E1E;
+    --red: #B81328;
+}
+
 .Dapp {
-    background-color: #010E1E;
+    position: relative;
+    background-color: var(--background);
     min-height: 100vh;
     display: flex;
     color: white;
@@ -9,7 +15,27 @@
 }
 
 a {
-    color: #B81328;
+    color: var(--red);
+}
+
+.button-solid {
+    background-color: var(--red);
+    color: white;
+}
+
+.button-outline {
+    background-color: var(--background);
+    border: 2px solid var(--red) !important;
+    color: white;
+}
+
+.button-solid:hover {
+    opacity: .85;
+}
+
+.button-outline:hover {
+    color: white;
+    background-color: var(--red);
 }
 
 

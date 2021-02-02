@@ -1,6 +1,8 @@
 footer {
-    margin-top: 1vmin;
-    flex-shrink: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /*min-height: 2.5rem;*/
 }
 
 .nav {

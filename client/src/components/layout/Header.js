@@ -1,15 +1,17 @@
 import React from 'react';
 import './Header.css';
-import {ReactComponent as ReactLogo} from '../../imgs/header-red-logo.svg';
+import {ReactComponent as MCLogo} from '../../imgs/header-red-logo.svg';
+import ConnectWallet from "../ConnectWallet";
 
 
 const Header = () => {
     return (
         <div className="Header">
             <a href="/">
-                <ReactLogo className="logo-img" width="50" height="50"/>
+                <MCLogo className="logo-img" width="75" height="75"/>
             </a>
-            <h1 className="logo-text">Mount Carlo</h1>
+            <div style={{flexGrow: 1}}/>
+            <ConnectWallet/>
         </div>
     );
 };

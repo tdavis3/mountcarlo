@@ -4,7 +4,7 @@
 }
 
 .initialized-info {
-    border: 1px solid #B81328;
-    background-color: #B81328;
+    border: 1px solid var(--red);
+    background-color: var(--red);
     width: 50%;
 }

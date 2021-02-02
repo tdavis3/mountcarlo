@@ -1,23 +1,10 @@
-.Home {
+.Dashboard {
     padding: 5vmin 10vmax 5vmin 10vmax;
     /*height: 100%;*/
     /*flex-grow: 1;*/
     /*justify-items: center;*/
     /*align-items: center;*/
     flex: 1 0 auto;
-}
-
-button {
-    background-color: #B81328;
-    color: white;
-}
-
-button:hover {
-    opacity: .85;
-}
-
-button.connect {
-    font-size: 1.2em;
 }
 
 .main-view {
@@ -36,8 +23,8 @@ button.connect {
 }
 
 .divider {
-    border: 1px solid #B81328;
-    background-color: #B81328;
+    border: 1px solid var(--red);
+    background-color: var(--red);
     margin: 3vmin;
     text-align: center;
 }

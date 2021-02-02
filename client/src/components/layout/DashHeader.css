@@ -1,4 +1,4 @@
-.Header {
+.DashHeader {
     display: flex;
     padding: 3vmin;
     margin-left: 6vmin;
@@ -14,8 +14,4 @@
 
 .logo-img {
 
-}
-
-.button-connect {
-    font-size: 18px !important;
 }

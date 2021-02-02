@@ -3,26 +3,56 @@ import './BiddingTable.css';
 import {Button} from 'rebass';
 import {Input} from '@rebass/forms';
 import Loading from "./Loading";
+import {connect} from "react-redux";
+import {ethers} from "ethers";
+import {ERROR_CODE_TX_REJECTED_BY_USER} from "../utilities";
 
 
-const BiddingTable = ({contractState, sendBid, loading}) => {
+const BiddingTable = ({metaData, contractData}) => {
 
     useEffect(() => {
-    }, [loading]);
+    }, [metaData, contractData.data]);
 
     const [inputBid, setInputBid] = useState(0);
+    const [bidTxLoading, setBidTxLoading] = useState(false);
 
     const handleChange = e => {
         setInputBid(e.target.value);
     }
 
-    const executeBid = async () => {
-        if (inputBid > 0.001) {  // TODO: Probably 0.001 (the minimum bid) should not be hardcoded
-            await sendBid(inputBid.toString());
+    /**
+     * Sends bid to Mount Carlo contract
+     * @param {String} bid
+     */
+    const sendBid = async () => {
+        if (!(inputBid > 0.001)) {
+            return;
+        }
+        const bid = inputBid.toString();
+        try {
+            setBidTxLoading(true);
+            const bidTx = await metaData.contract.bid({value: ethers.utils.parseEther(bid)});  // Send the transaction
+            const receipt = await bidTx.wait();  // Wait for the transaction to be mined
+            if (receipt.status === 0) {
+                // We can't know the exact error that make the transaction fail once it was
+                // mined, so we throw this generic one.
+                // TODO: Display an error message
+                console.log("An error occurred when attempting to send a bid of: ", bid);
+                // throw new Error("Bid transaction failed when sending a bid of: " + bid);
+            }
+            // At this point the tx was successful
+            setBidTxLoading(false);
+        } catch (error) {
+            setBidTxLoading(false);
+            // If the user rejected tx, then do nothing
+            if (error.code === ERROR_CODE_TX_REJECTED_BY_USER) {
+                return;
+            }
+            // TODO: Other errors should be logged and handled
         }
     }
 
-    if (contractState.gameOver) {
+    if (contractData.data.gameOver) {
         return (
             <div className="BiddingTable">
                 <h2 className="view-title">Bidding Table</h2>
@@ -48,11 +78,19 @@ const BiddingTable = ({contractState, sendBid, loading}) => {
                         <p className="units">ETH</p>
                     </div>
                 </div>
-                <Button onClick={executeBid} disabled={contractState.gameOver}>Bid</Button>
-                {loading && (<Loading/>)}
+                <Button onClick={sendBid} disabled={contractData.data.gameOver}>Bid</Button>
+                <p>Your bid must be strictly greater than (highestBid + 0.001)</p>
+                {bidTxLoading && (<Loading/>)}
             </div>
         </div>
     );
 }
 
-export default BiddingTable;
+const mapStateToProps = (state) => {
+    return {
+        metaData: state.metaData,
+        contractData: state.contractData
+    }
+}
+
+export default connect(mapStateToProps, null)(BiddingTable);

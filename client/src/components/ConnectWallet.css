@@ -1,9 +1,9 @@
 .ConnectWallet {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    flex-grow: 1;
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*text-align: center;*/
+    /*flex-grow: 1;*/
 }
 
 .ConnectWallet p {
