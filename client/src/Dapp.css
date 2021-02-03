@@ -29,6 +29,13 @@ a {
     color: white;
 }
 
+.button-link {
+    background-color: var(--background);
+    border-bottom: 2px solid var(--red) !important;
+    border-radius: 0 !important;
+    color: white;
+}
+
 .button-solid:hover {
     opacity: .85;
 }

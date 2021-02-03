@@ -1,10 +1,10 @@
 import React from "react";
 import {Button} from 'rebass';
-import Loading from "./Loading";
-import NetworkErrorMessage from "./errors/NetworkErrorMessage";
+import Loading from "../Loading";
+import NetworkErrorMessage from "../errors/NetworkErrorMessage";
 import './ConnectWallet.css';
 import {connect} from "react-redux";
-import {connectWallet} from "../redux/actions/metaData";
+import {connectWallet} from "../../redux/actions/metaData";
 
 
 const ConnectWallet = ({connectWallet, metaData}) => {

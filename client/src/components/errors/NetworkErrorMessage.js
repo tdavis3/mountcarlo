@@ -1,6 +1,6 @@
 import React from "react";
 import {Button} from "rebass";
-import '../ConnectWallet.css';
+import '../layout/ConnectWallet.css';
 
 
 export default function NetworkErrorMessage({message, dismiss}) {

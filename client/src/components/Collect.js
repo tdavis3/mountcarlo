@@ -37,7 +37,7 @@ const Collect = ({metaData, contractData}) => {
                 !contractData.data.gameOver && (
                     <div>
                         <p className="collect-helper-text">Attempt to drain the contract :)</p>
-                        <Button onClick={collect} disabled={contractData.data.gameOver}>Collect</Button>
+                        <Button className="button-solid" onClick={collect} disabled={contractData.data.gameOver}>Collect</Button>
                         {collectTxLoading && (<Loading/>)}
                     </div>
                 )

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import {ReactComponent as MCLogo} from '../../imgs/header-red-logo.svg';
-import ConnectWallet from "../ConnectWallet";
+import ConnectWallet from "./ConnectWallet";
 
 
 const Header = () => {
